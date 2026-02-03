@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src= script.js></script>
+</head>
+<body>
+    <!-- Marcos Ammerman 2/1/26 -->
+     <div id=" error"> </div>
+     <!-- form indicates form associated events some of which are editable -->
+    </head>
+<body style="background-color: #f0f4f8; font-family: sans-serif; text-align: center;">
+    
+    <!--header with largest font size  -->
+    <h1>Welcome to Marcos' Portal</h1>
+
+    <div id="statusUpdate" style="color: red; font-weight: bold; margin-bottom: 20px;"></div>
+
+    <form id="userForm" onsubmit="return validateInput()">
+        <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+        </div>
+        <br>
+        <div>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+        </div>
+        <br>
+        <div>
+            <label for="zipCode">Zip Code:</label>
+            <input type="text" id="zipCode" required>
+        </div>
+        <br>
+        <!-- the button with the text writen on it -->
+        <button type="submit">Unlock Secret Message</button>
+    </form>
+
+    <div id="secretMessage" style="display:none; margin-top: 30px; background-color: white; padding: 20px;">
+        <h2> Success!</h2>
+       <!-- the message text after a successful set of inputs -->
+        <p>The secret message is: "Programming is fun in CSC102"</p>
+    </div>
+
+</body>
+</html>
