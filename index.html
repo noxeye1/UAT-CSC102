@@ -1,11 +1,11 @@
-<!-- Marcos Ammerman 1/25/26 -->
+<!-- Marcos Ammerman 2/8/26 -->
  <!-- doctype describes the type of file. html5 in this case  -->
   <!DOCTYPE html>
  <html>
     <head> 
         <title>CSC102 HOME PAGE</title>
     <!-- add link to css file -->
-     <link rel="stylesheet" href="main.css">
+     <link rel="stylesheet" href="new.css">
     </head>
     <body>
         <header>
@@ -18,22 +18,33 @@
          <nav> <a href="boards.html"> Boards</a></nav>
         </h2>
         </header>
+        <main>
          <p>
             <!-- image tag, needs the source of the image (src) -->
-            <img id="uat class meme" src="uat class meme.jpg">
+            <img id="uat_class_meme" src="uat_class_meme.jpg" 
+            alt="UAT Class Meme" style="position: relative;">
         </p>
-    
+        <form id="memeControls" onsubmit="return false;">
+            <!--buttons, type, name and function  -->
+            <input type="button" id="startBtn" value="Start Moving" onclick="startMoving()">
+            <input type="button" id="stopBtn" value="Stop Moving" onclick="stopMoving()" disabled>
+        </form>
+        
+        <div id="msgDisplay"></div>
+
+    </main>
     <footer>
         <!-- as described bottom of page, in this case 
          no current links just info -->
         Marcos Ammerman
         <br>
-        University of Advamcing Technology
+        University of Advancing Technology
         <br>
         2625 W Baseline Rd,
         <br>
          Tempe, AZ 85283
 
     </footer>
+    <script src="mememove.js"></script>
     </body>
  </html>
