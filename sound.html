@@ -14,16 +14,22 @@
     </nav>
     <header>
         <main>
-          <button id="btnAddSound">Add Sound</button>
+            <form id="audioForm">
+                <p>Enter 'play' to enable buttons:</p>
+                <input type="text" id="userInput">
+                <button type="submit" id="btnAddSound">Add Sound</button>
+            </form>
+            <br>
+            <br>
             <br><br>
             <button id="btnPlaySound" hidden="true">Play Sound</button>
             <br><br>
             <button id="btnPauseSound" hidden="true">Pause Sound</button>
 
+            <div id="statusUpdate"></div>
         </main>
         <script src="sound.js"></script>
     </header>
     
 </body>
-
 </html>
